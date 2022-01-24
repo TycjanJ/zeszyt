@@ -1,0 +1,27 @@
+<html>
+<head>
+<META CHARSET="Utf-8">
+</head>
+<body>
+<textarea cols="85" rows="30">
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    for ( int i=33;i<=255;i++)
+    {
+        if ((i+7) % 20==0)
+        {system("PAUSE");system("cls");}
+        cout<<"kod znaku  "<<i<<"      "<<(char)i<<"\n";
+    }
+    
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+</textarea>
+</body>
+</html>

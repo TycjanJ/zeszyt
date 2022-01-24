@@ -1,9 +1,3 @@
-<html>
-<head>
-<META CHARSET="Utf-8">
-</head>
-<body>
-<textarea cols="85" rows="30">
 #include <cstdlib>
 #include <iostream>
 #include <stdio.h>
@@ -11,7 +5,7 @@
 using namespace std;
 int main(int argc, char *argv[])
 {
-for (int jan=11;jan<=41;jan+=1)
+for (int jan=12;jan<=42;jan+=2)
 {
   cout <<  jan << " ";
 }
@@ -19,6 +13,5 @@ cout << endl;
  system("PAUSE");
  return EXIT_SUCCESS;
 }
-</textarea>
-</body>
-</html>
+
+
