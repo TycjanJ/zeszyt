@@ -1,0 +1,23 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<style>
+body { font-size: 1cm };
+</style>
+</head>
+<body>
+<h1> <li> znaleziona liczba pierwsza liczbie=</h1>100927<br>
+<h1> <li> Definicja liczby pierwszej </h1><br>
+<p> Liczba pierwsza to liczba naturalna n>1, dla ktorej istnieja tylko dwa dzielniki naturalne: 1 i n. </p><br>
+<h1><li> Najwieksza znaleziona liczba pierwsza </h1><br>
+<p> 2 <sup>69725932 </sup> </p><br>
+<h1> <li> opis algorytmu stosowanego na lekcji do znajdowania liczb pierwszych </h1><br>
+<p>Sprawdzamy czy kolejne liczby naturalne od 2 do pierwiastek(n) sa podzielnikami liczby n.
+Sprawdzenie podzielnosci odbywa sie poprzez uzycie funkcji % (MOD->reszta z dzielenia),
+jesli reszta z dzielenia jest zero to oznacza to, ze liczba n jest podzielna przez liczbe mniejsza
+od n i n nie jest liczba pierwsza. Nalezy zauwazyc, ze nie jest konieczne sprawdzanie
+kolejnych liczb naturalnych do 2 do n a wystarczy do pierwiastek(n). Zmienna k ma wartosc
+domyslnie zero. Po zakonczeniu programu sprawdzamy wartosc zmiennej k, jesli jest rowna
+zero oznacza to, ze liczba n jest pierwsza, jesli nie (czyli jeden) to liczba nie jest pierwsza.
+Zmiana k zmieniana jest na wartosc jeden gdy liczba n jest podzielna przez kolejna liczbe
+naturalna mniejsza od pierwiasta(n). </p><br>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<META CHARSET="Utf-8">
+</head>
+<body>
+<textarea cols="85" rows="40">
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+ 
+int main()
+{
+int iloczyn_jan=1;
+int gora_jan;
+cout<<"Podaj gorna granice obliczania iloczynu: ";
+cin >> gora_jan;
+int dol_jan;
+cout<<"Podaj dolna granice obliczania iloczynu: ";
+cin >> dol_jan;
+for(int i = gora_jan; i <= dol_jan; i++)
+iloczyn_jan*= i;
+cout<<iloczyn_jan<<endl;
+system("PAUSE");
+ return EXIT_SUCCESS; 
+}
+</textarea>
+</body>
+</html>

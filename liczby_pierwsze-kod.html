@@ -1,0 +1,60 @@
+<html>
+<head>
+<META CHARSET="Utf-8">
+</head>
+<body>
+<textarea cols="85" rows="40">
+#include <cstdlib>
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+
+ cout<<"podaj liczbe naturalna, program sprawdzi czy jest pierwsza: ";
+ int pierwsza_jan;
+ int suma_jan;
+ int k=0;
+ cin>>pierwsza_jan;
+ cout<<"podaj druga liczbe naturalna, program sprawdzi czy jest pierwsza: ";
+ int druga_jan;
+ int n=0;
+ cin>>druga_jan;
+ for(int i=2;i<=sqrt(pierwsza_jan);++i)
+ for(int i=2;i<=sqrt(druga_jan);++i)
+ {
+if ((pierwsza_jan) % i==0)
+if ((druga_jan) % i==0)
+{
+k=1;
+n=1;
+cout<<"liczba "<<pierwsza_jan<<" to nie jest liczba pierwsza, poniewaz  jest podzielna przez "
+<<i<<","<<druga_jan<<"tez nie jest pierwsza, poniewaz jest podzielna przez "<<i<<"\n";
+ }
+ }
+ {
+ if ( k==0);
+ if ( n==0);
+ suma_jan=(pierwsza_jan+druga_jan);
+ if (suma_jan%2==0)
+ {
+ cout<<"liczba "<<pierwsza_jan<<" jest liczba pierwsza,"<<druga_jan<<"  tez jest liczba pierwsza, ich suma wynosi "<<suma_jan<<",jest parzysta"<<"\n";
+}
+}
+{
+if ( k==0);
+if ( n==0);
+suma_jan=(pierwsza_jan+druga_jan);
+if (suma_jan%2==1)
+ {
+cout<<"liczba "<<pierwsza_jan<<"  jest liczba pierwsza,"<<druga_jan<<"  tez jest liczba pierwsza, ich suma wynosi "<<suma_jan<<",jest nieparzysta"<<"\n";
+}
+}
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
+</textarea>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<META CHARSET="Utf-8">
+</head>
+<body>
+<textarea cols="85" rows="40">
+#include<iostream>
+#include<cmath>
+#include <cstdlib>
+
+using namespace std;
+
+bool doskonala(int n)
+{
+int s = 1, p = sqrt(n);
+for(int i=2; i<=p; i++)
+if(n%i == 0)
+s+= i + n/i;
+if(n == p*p) s-=p;
+if(n == s) return 1;
+return 0;	
+}
+int main()
+{
+int n;
+cout<<"Podaj liczbe: ";
+cin>>n;
+if(doskonala(n))
+cout<<"Liczba "<<n<<" jest doskonala"<<endl;
+else
+cout<<"Liczba "<<n<<" nie jest doskonala"<<endl;
+system("PAUSE");
+ return EXIT_SUCCESS;
+}
+</textarea>
+</body>
+</html>

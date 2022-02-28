@@ -1,0 +1,32 @@
+<html>
+<head>
+<META CHARSET="Utf-8">
+</head>
+<body>
+<textarea cols="85" rows="40">
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+system("chcp 1250");
+int gora_jan;
+cout<<"podaj górną granicę obliczania sumy=";
+cin>>gora_jan;
+int dol_jan;
+cout<<"podaj dolną granicę obliczania sumy=";
+cin>>dol_jan;
+int suma_jan=0;
+for(int dzialanie=gora_jan;dzialanie<=dol_jan;dzialanie++)
+{
+suma_jan+=dzialanie;
+}
+cout<<"suma="<<suma_jan<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>
+</body>
+</html>
