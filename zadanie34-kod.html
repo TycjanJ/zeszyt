@@ -1,0 +1,29 @@
+<html>
+<head>
+<META CHARSET="Utf-8">
+</head>
+<body>
+<textarea cols="85" rows="30">
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ int a[5];
+ for(int i=0;i<=4;i++)
+ {
+ cout<<"podaj A["<<i<<"]=";
+ cin>>a[i];
+ }
+ int iloczyn=1;
+ for(int i=0;i<=4;i++)
+ {
+ iloczyn=iloczyn*a[i];
+ }
+ cout<<"Iloczyn="<<iloczyn<<"\n";
+ system("PAUSE");
+}
+
+</textarea>
+</body>
+</html>
